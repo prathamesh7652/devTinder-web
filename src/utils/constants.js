@@ -1,2 +1,4 @@
 export const BASE_URL =
-  location.hostname === "localhost" ? "http://localhost:7777" : "/api";
+  window.location.hostname === "localhost"
+    ? "http://localhost:5000"  // your local backend port
+    : "https://devtinderserver.onrender.com"; // Render backend
